@@ -10,11 +10,10 @@ description: |
 dependencies:
   #pg:
    # github: will/crystal-pg
-   # version: "~> 0.5"
-
-  cor:
-    github: watzon/cor
-
+   # version: "~> 0.5
+  athena:
+    github: athena-framework/framework
+    version: ~> 0.16.0
 
 # development_dependencies:
 #   webmock:

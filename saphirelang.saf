@@ -46,5 +46,10 @@ Saf.compact
 exit
 end
 
+	parser.on "-f", "--fetch", "fetch new shards from shard.yml" do
+Saf.fetch
+exit
+end
+
 		end
 	end
