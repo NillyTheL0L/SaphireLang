@@ -1,0 +1,45 @@
+require "option_parser"
+require "./prefix/**"
+
+class Saf
+
+
+	
+	def self.debug
+		system("crystal run ./projects/index.saf")
+end
+
+
+def self.build
+system("crystal build main.cr")
+	end
+
+
+	
+OptionParser.parse do |parser|
+  parser.banner = "Welcome to The Beatles App!"
+
+		parser.on "-i", "--index", "Debug /projects/ index.saf file" do
+    puts "debugging"
+		Saf.debug
+	 exit
+  end
+  parser.on "-h", "--help", "Show help" do
+    puts parser
+    exit
+		end
+
+		parser.on "-s", "--server", "starts a http server" do
+			puts "starting server"
+			system("crystal run ./assets/presets/webserver.saf")
+			exit
+		end
+
+parser.on "-n", "--new", "Create a new index.saf into /projects" do
+			system("cp ./assets/presets/index.saf ./projects/")
+			puts "new project created at ./projects/index.saf"
+		exit
+		end
+		
+		end
+	end

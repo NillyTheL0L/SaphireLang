@@ -1,0 +1,23 @@
+name: SaphireLang
+version: 0.1.0
+
+authors:
+   - NillyTheL0L <email@example.com>
+
+description: |
+   Amazing lanf
+
+dependencies:
+  #pg:
+   # github: will/crystal-pg
+   # version: "~> 0.5"
+
+  cor:
+    github: watzon/cor
+
+
+# development_dependencies:
+#   webmock:
+#     github: manastech/webmock.cr
+
+license: MIT
