@@ -40,6 +40,11 @@ parser.on "-n", "--new", "Create a new index.saf into /projects" do
 			puts "new project created at ./projects/index.saf"
 		exit
 		end
-		
+
+	parser.on "-c", "--compact", "compact your index.saf file" do
+Saf.compact
+exit
+end
+
 		end
 	end

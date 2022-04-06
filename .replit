@@ -1,1 +1,1 @@
-run = "crystal build saphirelang.cr"
+run = "crystal build saphirelang.saf"
